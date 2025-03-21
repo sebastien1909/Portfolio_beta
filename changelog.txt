@@ -1,0 +1,18 @@
+Modifications apportés depuis la version alpha : 
+    Images : 
+        Ajout de certains alt manquants
+        Compression de certaines images pour éviter d'avoir un fichier trop lourd
+        Ajout d'un logo associé au Portfolio
+        Modification de la couleur des images représentant mon parcours scolaire afin de les rendre plus claire, pour améliorer le contraste avec le fond noir
+
+    Global : 
+        Recentrage de certains éléments qui n'étaient pas centrés
+        Finitions des projets (ajout des images représentatives ainsi que des logos)
+        Passage de la majorité des unités du pixel vers des pourcentages
+        Passage de certaines untés de texte encore en pixel en rem
+        Ajout d'un bouton pour télécharger le CV en haut de la page, en plus de celui en bas, afin de faciliter son téléchargement
+        Système de mail fonctionnel
+        Correction de certaines fautes d'orthographe
+        Passage de la très grande majorité des tailles en pourcentages ou en auto afin de garantir une certaine flexibilité des éléments face aux différentes tailles d'appareils des utilisateurs
+        Modification de certains éléments pour faciliter la navigation clavier
+        Modification de la font globale afin d'en rendre la lecture plus appréciable

@@ -1,0 +1,820 @@
+html{
+    scroll-behavior:smooth;
+}
+
+
+body{
+    margin:0px;
+    background:black;
+    color:white;
+    overflow-x: hidden;
+    max-width: 100vw;
+    font-family: sans-serif;
+}
+
+
+header{
+    background: rgb(30,30,100);
+    padding: 35px 150px;
+    height:40px;
+}
+
+
+.logo{
+    position:relative;
+    top:-5px;
+    right:150px;
+    width:5%;
+}
+
+.vertical{
+    border-right:2px solid white;
+    height:40px;
+}
+
+.link_cont{
+    display:flex;
+    justify-content:space-between;
+    width:80%;
+    margin-left:10%;
+}
+
+.link_cont a {
+    position: relative;
+    top: 7px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 400ms;
+}
+
+
+.link_cont a:hover {
+    font-size:1.2rem;
+    font-size-adjust: 20px;
+}
+
+
+.link_cont a::after {
+    content: "";
+    position: absolute;
+    right:0px;
+    bottom: 10px; 
+    width: 100%;
+    height: 2px;
+    background-color: white;
+    transform: scaleX(0); /* Caché par défaut */
+    transform-origin: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+
+.link_cont a:hover::after {
+    transform: scaleX(1); /* Déploie le soulignement */
+}
+
+    
+.fond_pres{
+    background: linear-gradient(0deg, black, rgb(30,30,100));
+    display:flex;
+    justify-content:space-between;
+    width: 100%;
+    height:auto;
+
+}
+
+
+.leftside{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    justify-content:space-between;
+    width:100%;
+    padding:50px;
+}
+
+
+.pres_img{
+    width:35%;
+    height:70%;
+    border-radius:50%;
+    transition:all 500ms;
+}
+
+.pres_img:hover{
+    transform:scale(1.05);
+    box-shadow: rgba(255, 255, 255, 0.25) 0px 12px 13px, rgba(255, 255, 255, 0.12) 0px -12px 13px, rgba(255, 255, 255, 0.12) 0px 12px 13px, rgba(255, 255, 255, 0.17) 0px 12px 13px, rgba(255, 255, 255, 0.09) 0px -12px 13px;
+}
+
+.leftside h6{
+    position:relative;
+    left:50px;
+    text-align:center;
+}
+
+.rightside{
+    margin-right:50px;
+    width:100%;
+    padding:50px;
+    padding-top:80px;
+}
+
+
+h1{
+    font-size:2.5rem;
+    font-weight:bolder;
+}
+
+h2{
+    margin-left:20px;
+    font-size:2.2rem;
+    font-weight:bold;
+}
+
+.recherche_job{
+    text-align:center;
+    margin-top:-10px;
+}
+
+h6{
+    font-size:1rem;
+}
+
+
+hr{
+    margin:50px 5%;;
+    width:90%;
+    height:2px;
+    background-color:rgb(50,50,50);
+    border-radius:35%;
+}
+
+
+.parc_cont{
+    display:flex;
+    justify-content:space-between;
+    justify-content:center;
+    padding:50px;
+    width:70%;
+    margin-left:10%;
+    margin-bottom:-75px
+}
+
+.parcours{
+    width:90%;
+    margin:auto;
+    margin-top:50px;
+}
+
+.left_parc{
+    display:flex;
+    width:170%;
+    justify-content:center;
+    align-items:center;
+    margin-right:50px;
+    margin-top:-20%;
+}
+
+.right_parc{
+    display:flex;
+    width:170%;
+    justify-content:center;
+    align-items:center;
+    margin-top:10%;
+}
+
+
+.right_parc p{
+    margin-top:30px;
+}
+
+.parc_cont img{
+    width:85px;
+    height:150px;
+    margin:50px;
+}
+
+
+h4{
+    font-size:1.7rem;
+    font-weight:bold
+}
+
+
+
+
+
+.projets{
+    width: 80%;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    justify-content:space-around;
+    margin-left:10%;
+}
+
+
+.projet_cont {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 25%;
+    height: 500px;
+    background-color:rgb(225,225,225);
+    border: solid grey 1px;
+    border-radius: 45px;
+    color: black;
+    padding: 25px;
+    transition: all 0.3s ease;
+    margin-bottom:50px;
+    min-height:auto;
+}
+
+
+.projet_cont:hover{
+    transform:scale(1.05);
+    box-shadow: rgba(30, 30, 120, 0.6) 0px 12px 13px, rgba(30, 30, 120, 0.6) 0px -12px 13px, rgba(30, 30, 120, 0.6) 0px 12px 13px, rgba(30, 30, 120, 0.6) 0px 12px 13px, rgba(30, 30, 120, 0.6) 0px -12px 13px;
+}
+
+.projet_cont h4{
+    text-align:center;
+}
+
+
+.projet_cont img{
+    width:50%;
+}
+
+.projet_cont p {
+    margin: 25px;
+}
+
+.henaff{
+    transform:scale(0.6);
+    margin-top:-10%;
+    margin-bottom:-15%;
+}
+
+.pokecollec{
+    margin-top:40px;
+    margin-bottom:40px;
+    transform : scale(1.7);
+}
+
+.festival_logo{
+    margin-bottom:-5%;
+}
+
+.raynewable{
+    margin-top:10%;
+    margin-bottom:5%;
+}
+
+.plus {
+    position: relative;
+    top:20px;
+    width: 40%;
+    padding: 5px 0px;
+    background: linear-gradient(to left top, rgb(20,20,80) 50%, rgb(30,30,120) 50%);
+    color: white;
+    font-weight:bold;
+    cursor: pointer;
+    transition: all 250ms;
+    border: none;
+    border-radius: 10px;
+}
+
+.plus:hover {
+    transform: scale(1.2);
+}
+
+.details {
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: opacity 0.4s ease, max-height 0.4s ease;
+    display: none; 
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+.details.show {
+    opacity: 1;
+    max-height: 1000px; 
+    padding: 15px;
+    display: flex;
+}
+
+.details img {
+    width: 45%; 
+    border-radius: 10px;
+}
+
+
+
+
+
+.hard_cont{
+    margin-left:5%;
+    display:flex;
+    flex-wrap:wrap;
+    width:90%;
+    height:auto;
+    padding:50px;
+}
+
+h3{
+    font-size:2rem;
+    font-weight:bold;
+    margin-bottom:15px;
+}
+
+
+.hard_skill{
+    background-color:rgb(225,225,225);
+    color:black;
+    border-radius:45px;
+    width:35%;
+    height:auto;
+    padding: 10px 50px;
+    margin:25px;
+    transition:all 500ms;
+}
+
+.hard_skill:hover{
+    transform:scale(1.05);
+    box-shadow: rgba(30, 30, 120, 0.6) 0px 12px 13px, rgba(30, 30, 120, 0.6) 0px -12px 13px, rgba(30, 30, 120, 0.6) 0px 12px 13px, rgba(30, 30, 120, 0.6) 0px 12px 13px, rgba(30, 30, 120, 0.6) 0px -12px 13px;
+}
+
+.under_title {
+    margin: 50px 0px 50px 100px;
+    color: white;
+}
+
+
+
+
+.soft_cont{
+    width: 80%;
+    margin: 50px auto 0 auto;
+    position: relative; /* Permet de positionner .justif en absolu */
+}
+
+.soft_skill {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    border-radius: 50px;
+    margin-bottom:25px;
+    background-color:rgb(225,225,225);
+    opacity: 1;
+    padding: 20px;
+    position: relative; /* Permet que .justif prenne bien la largeur */
+    z-index: 2; /* S'assure que cette div est au-dessus */
+    transition:all 500ms;
+}
+
+.soft_skill:hover{
+    transform:scale(1.05);
+    box-shadow: rgba(255, 255, 255, 0.25) 0px 12px 13px, rgba(255, 255, 255, 0.12) 0px -12px 13px, rgba(255, 255, 255, 0.12) 0px 12px 13px, rgba(255, 255, 255, 0.17) 0px 12px 13px, rgba(255, 255, 255, 0.09) 0px -12px 13px;
+}
+
+
+
+
+.fleche_defiler {
+    width: 60%;
+    height: 30px;
+    padding: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.fleche_cont {
+    border-radius: 50px;
+    padding: 5px;
+    transition: all 250ms;
+}
+
+.fleche_cont:hover {
+    transform: scale(1.025);
+    background-color: rgba(200, 200, 200, 0.6);
+    cursor:pointer;
+}
+
+.soft_skill h3 {
+    color: black;
+    margin-top:10px;
+}
+
+.justif {
+    width: 100.7%;
+    background: rgb(200,200,200);
+    opacity: 0;
+    border-radius: 0 0 50px 50px;
+    padding: 15px;
+    margin-bottom:25px;
+    margin-top:-25px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease-in-out, opacity 0.3s ease-in-out;
+    transition: transform 500ms;
+}
+
+.justif:hover{
+    transform:scale(1.025);
+}
+
+
+.justif p {
+    margin: 0;
+    padding: 10px;
+    color: black;
+}
+
+/* Active l'affichage en douceur */
+.justif.active {
+    max-height: 200px; /* Adapte la hauteur selon ton contenu */
+    opacity: 1;
+}
+
+
+.act_cont{
+    width:80%;
+    margin:50px 10%;
+}
+
+
+.act1{
+    display:flex;
+    width:80%;
+    margin:auto;
+    margin-top:100px;
+    border:solid rgb(60,60,60) 1px;
+    border-radius:50px;
+    transition:all 500ms;
+}
+
+
+
+.act1:hover{
+    transform:scale(1.05);
+    box-shadow: rgba(255, 255, 255, 0.25) 0px 12px 13px, rgba(255, 255, 255, 0.12) 0px -12px 13px, rgba(255, 255, 255, 0.12) 0px 12px 13px, rgba(255, 255, 255, 0.17) 0px 12px 13px, rgba(255, 255, 255, 0.09) 0px -12px 13px;
+}
+.texte{
+    width:150%;
+    margin-right:10%;
+}
+
+
+.act1 img{
+
+    width:20%;
+    height:20%;
+}
+
+
+.act2{
+    display:flex;
+    width:80%;
+    margin:auto;
+    margin-top:100px;
+    border:solid rgb(60,60,60) 1px;
+    border-radius:50px;
+    transition:all 500ms;
+}
+
+
+.act2:hover{
+    transform:scale(1.05);
+    box-shadow: rgba(255, 255, 255, 0.25) 0px 12px 13px, rgba(255, 255, 255, 0.12) 0px -12px 13px, rgba(255, 255, 255, 0.12) 0px 12px 13px, rgba(255, 255, 255, 0.17) 0px 12px 13px, rgba(255, 255, 255, 0.09) 0px -12px 13px;
+}
+
+.act1 .texte{
+    width:40%;
+    margin-left:10%;
+}
+
+.act2 .texte{
+    width:40%;
+    margin-left:10%;
+}
+
+
+
+.act2 img{
+    
+    margin-left:10%;
+    width:20%;
+    height:20%;
+}
+
+
+footer{
+    background: linear-gradient(180deg, black, rgb(30,30,100));
+    padding-top:15px;
+    width:100%;
+    height:auto;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    padding-bottom:0px;
+}
+
+.button_cont{
+    display:flex;
+    margin-top:30px;
+    width:100%;
+}
+
+
+.cv_download{
+    position:relative;
+    margin:auto;
+    width:30%;
+    padding:15px;
+    border-radius:50px;
+    border: solid 1px white;
+    background-color: black;
+    text-align:center;
+    transition: all 250ms;
+    color:white;
+    font-size:1.5rem;
+    text-decoration:none;
+}
+
+.cv_download:hover{
+    transform:scale(1.05);
+    background-color:rgb(35,35,35);
+}
+
+
+.instagram{
+    width:30px;
+    height:27px;
+    padding-right:15px;
+    padding-top:9px;
+}
+
+
+
+.linkedin{
+    width:27px;
+    height:27px;
+    padding-top:9px;
+    padding-right:15px;
+}
+
+
+footer h5{
+    font-size:1.4rem;
+    font-weight:bold;
+}
+
+.contact{
+    display:flex;
+    margin:0px 50px;
+    justify-content:center;
+    font-size:1rem;
+    font-weight:600px;
+    transition: all 350ms
+}
+
+
+.contact:hover{
+    transform:scale(1.1)
+}
+
+
+.contact_cont{
+    display:flex;
+}
+
+
+footer a{
+    color:white;
+    font-size:1.2rem;
+    text-decoration:none;
+}
+
+footer hr{
+    width:80%;
+    background-color:white;
+    margin-top:50px;
+    margin-left:10%;
+    height:2px;
+    border-radius:100%;
+}
+
+.mail{
+    margin:50px;
+    width:auto;
+    height:auto;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+
+
+.contact_item{
+    margin-top:30px;
+    border-radius:25px;
+    line-height:auto;
+}
+
+
+.mail_enter{
+    padding:15px;
+    width:100%;
+}
+
+
+.object{
+    padding:15px;
+    width:150%;
+}
+
+
+.content{
+    height:250px;
+    width: 300%;
+    padding:15px;
+}
+
+.envoyer{
+    margin-top:10%;
+    color:white;
+    width:100%;
+    height:50px;
+    background-color:rgb(20,20,50);
+    font-weight:bold;
+    font-size:1rem;
+    border-radius:15px;
+    transition: all 250ms
+}
+
+
+.envoyer:hover{
+    background-color:white;
+    color:black;
+    transform:scale(1.05);
+}
+
+footer h1{
+    margin-bottom:5px;
+}
+
+
+
+
+
+
+.contact p::after {
+    content: "";
+    position: absolute;
+    left:30%;
+    bottom: 5px; 
+    width: 70%;
+    height: 2px;
+    background-color: white;
+    transform: scaleX(0); /* Caché par défaut */
+    transform-origin: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+
+.contact p:hover::after {
+    transform: scaleX(1); /* Déploie le soulignement */
+}
+
+
+.full_page {
+    background: black;
+    height: 6000px;
+    padding: 20px;
+    color: white;
+}
+
+.fleche {
+    position: fixed;
+    z-index:9999;
+    cursor:pointer;
+    bottom: 20px;
+    right: 47.5%;
+    background: white;
+    opacity: 60%;
+    padding: 10px;
+    border-radius: 50%;
+    display: none; 
+    transition: opacity 0.3s, transform 0.3s;
+}
+
+.fleche img {
+    width: 40px;
+    height: 40px;
+}
+
+.fleche:hover {
+    opacity: 1;
+    transform: scale(1.2);
+    border:solid 1px rgb(20,20,150);
+}
+
+
+.hr_holder{
+    background:rgb(30,30,100);
+}
+
+.hr_base{
+    margin:0 0 0 5%;
+}
+
+
+.img_comp_cont{
+    display:flex;
+    justify-content:center;
+    justify-content:space-between;
+}
+
+
+
+
+.moto{
+    margin-top:8%;
+}
+
+.ski{
+    margin-top:7%;
+}
+
+
+.velo{
+    margin-top:9%;
+}
+
+.assetto{
+    margin-top:10%;
+}
+
+.music{
+    margin-top:12%;
+}
+
+.dweb{
+    margin-top:12%;
+}
+
+.mod_height{
+    height:auto;
+}
+
+
+
+
+/* test pour faire apparaitre progressivement les div (spoiler:ça marche pas donc ça reste en commentaire pour l'instant)
+
+
+.vignets {
+    
+    animation: fadein 2s;
+    -moz-animation: fadein 2s;
+    -webkit-animation: fadein 2s; 
+    -o-animation: fadein 2s; 
+}
+@keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-moz-keyframes fadein { 
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-webkit-keyframes fadein { 
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-o-keyframes fadein { 
+    from {
+        opacity:0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
+*/
